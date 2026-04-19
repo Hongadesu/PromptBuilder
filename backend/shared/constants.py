@@ -15,8 +15,9 @@ PROMPT_BUILDER_FILE_EXT = "promptbuilder.json"
 PROMPT_BUILDER_FILE_EXT_NAME = "Prompt Builder Files"
 
 # like 'JSON Files (*.json)', 'Prompt Builder Files (*.promptbuilder.json)'
+# use *.json to ensure compatibility with pywebview's file dialog filters
 PROMPT_BUILDER_FILE_DESCRIPTION = (
-    f"{PROMPT_BUILDER_FILE_EXT_NAME} (*.{PROMPT_BUILDER_FILE_EXT})"
+    f"{PROMPT_BUILDER_FILE_EXT_NAME} (*.json)"
 )
 
 EXPORT_ALL_DEFAULT_FILENAME = "app.promptbuilder.json"
