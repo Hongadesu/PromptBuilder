@@ -1,0 +1,14 @@
+<svg width="512" height="512" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>Layer 1</title>
+  <g id="svg_13">
+   <rect rx="96" id="svg_10" height="508.9231" width="508.9231" y="1.20658" x="1.53845" stroke="#000" fill="#ffffff"/>
+   <g id="svg_12">
+    <text transform="matrix(15.7087, 0, 0, 15.7087, -5334.9, -3435.48)" font-weight="bold" xml:space="preserve" text-anchor="start" font-family="Noto Sans JP" font-size="24" id="svg_1" y="242.69309" x="341.39157" stroke-width="0" stroke="#000" fill="#005fbf">{  }</text>
+    <text transform="matrix(9.29694, 4.33523, -4.33523, 9.29694, -2000.54, -3532.11)" font-weight="bold" xml:space="preserve" text-anchor="start" font-family="Noto Sans JP" font-size="24" id="svg_8" y="258.94729" x="356.1924" stroke-width="0" stroke="#000" fill="#005fbf">?</text>
+    <text transform="matrix(8.14458, 3.79788, -3.79788, 8.14458, -1713.85, -2677.3)" font-weight="bold" xml:space="preserve" text-anchor="start" font-family="Noto Sans JP" font-size="24" id="svg_9" y="205.33857" x="322.11004" stroke-width="0" stroke="#000" fill="#005fbf">$</text>
+   </g>
+  </g>
+ </g>
+</svg>
