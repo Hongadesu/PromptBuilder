@@ -1,0 +1,248 @@
+/* glowing card styles */
+.container {
+  --mouse-x: -999999px;
+  --mouse-y: -999999px;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  position: absolute;
+  content: '';
+  inset: 0;
+  background: radial-gradient(
+    circle,
+    oklch(from var(--border) l c h / 0.5) 0%,
+    #00000000
+  );
+  border-radius: 50%;
+  transform: translate(var(--mouse-x), var(--mouse-y));
+}
+
+.inner {
+  position: absolute;
+  inset: 0.125rem;
+  border-radius: inherit;
+  background: inherit;
+}
+
+/* typing styles */
+.myTemplate {
+  --caret: currentcolor;
+}
+
+.myTemplate::before {
+  content: '我的模板';
+}
+
+.myTemplate.active::before {
+  animation: typing-myTemplate 6s infinite;
+}
+
+.myTemplate.active::after {
+  content: '';
+  border-right: 1ch solid var(--caret);
+  animation: blink 0.5s linear infinite;
+}
+
+@keyframes typing-myTemplate {
+  0% {
+    content: '我的模板';
+  }
+  5% {
+    content: '我的模';
+  }
+  10% {
+    content: '我的';
+  }
+  15% {
+    content: '我';
+  }
+  20%,
+  25% {
+    content: '';
+  }
+  30% {
+    content: '我';
+  }
+  35% {
+    content: '我的';
+  }
+  40% {
+    content: '我的模';
+  }
+  45% {
+    content: '我的模板';
+  }
+  50%,
+  100% {
+    content: '我的模板';
+  }
+}
+
+.group {
+  --caret: currentcolor;
+}
+
+.group::before {
+  content: '群組';
+}
+
+.group.active::before {
+  animation: typing-group 4s infinite;
+}
+
+.group.active::after {
+  content: '';
+  border-right: 1ch solid var(--caret);
+  animation: blink 0.5s linear infinite;
+}
+
+@keyframes typing-group {
+  0% {
+    content: '群組';
+  }
+  10% {
+    content: '群';
+  }
+  20%,
+  25% {
+    content: '';
+  }
+  30% {
+    content: '群';
+  }
+  40% {
+    content: '群組';
+  }
+  50%,
+  100% {
+    content: '群組';
+  }
+}
+
+.quickGroup {
+  --caret: currentcolor;
+}
+
+.quickGroup::before {
+  content: '速填模板';
+}
+
+.quickGroup.active::before {
+  animation: typing-quickGroup 4s infinite;
+}
+
+.quickGroup.active::after {
+  content: '';
+  border-right: 1ch solid var(--caret);
+  animation: blink 0.5s linear infinite;
+}
+
+@keyframes typing-quickGroup {
+  0% {
+    content: '速填模板';
+  }
+  10% {
+    content: '速填模';
+  }
+  20% {
+    content: '速填';
+  }
+  30% {
+    content: '速';
+  }
+  40%,
+  45% {
+    content: '';
+  }
+  50% {
+    content: '速';
+  }
+  60% {
+    content: '速填';
+  }
+  70% {
+    content: '速填模';
+  }
+  80% {
+    content: '速填模板';
+  }
+  90%,
+  100% {
+    content: '速填模板';
+  }
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.test {
+  --caret: currentcolor;
+}
+
+.test::before {
+  content: '新增/測試模板';
+}
+
+.test.active::before {
+  animation: typing-test 6s infinite;
+}
+
+.test.active::after {
+  content: '';
+  border-right: 1ch solid var(--caret);
+  animation: blink 0.5s linear infinite;
+}
+
+@keyframes typing-test {
+  0% {
+    content: '新增/測試模板';
+  }
+  10% {
+    content: '新增/測試模';
+  }
+  20% {
+    content: '新增/測試';
+  }
+  30% {
+    content: '新增/測';
+  }
+  40% {
+    content: '新增/';
+  }
+  50% {
+    content: '新增';
+  }
+  60% {
+    content: '新';
+  }
+  70% {
+    content: '';
+  }
+  80% {
+    content: '新';
+  }
+  85% {
+    content: '新增';
+  }
+  90% {
+    content: '新增/';
+  }
+  95% {
+    content: '新增/測';
+  }
+  100% {
+    content: '新增/測試模板';
+  }
+}

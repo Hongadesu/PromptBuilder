@@ -1,0 +1,109 @@
+@import 'tailwindcss';
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+@font-face {
+  font-family: 'NotoSansCJKtc';
+  src: url('/fonts/NotoSansMonoCJKtc-Regular.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NotoSansCJKtc';
+  src: url('/fonts/NotoSansMonoCJKtc-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@theme {
+  --font-noto: 'NotoSansCJKtc', sans-serif;
+}
+
+:root {
+  /* background */
+  --bg: oklch(100% 0 270);
+  --on-bg: oklch(32% 0 270);
+  --on-bg-title: oklch(55.37% 0.15 247);
+
+  /* primary */
+  --primary: oklch(62.5% 0.2 255);
+  --on-primary: oklch(100% 0 270);
+
+  /* secondary */
+  --secondary: oklch(62.5% 0.1 252);
+  --on-secondary: oklch(96% 0 270);
+
+  /* states */
+  --destructive: #dc2626; /* #dc2626 = red-600 */
+  --success: #22c55e; /* #22c55e = green-600 */
+  --muted: oklch(95% 0 262);
+  --on-muted: oklch(80% 0 262);
+
+  /* surface */
+  --surface: oklch(98% 0 270);
+  --on-surface: #5c5c5c;
+
+  /* sidebar */
+  --sidebar: oklch(98% 0.05 255);
+  --on-sidebar: oklch(40% 0.1 255);
+
+  /* code */
+  --code: #8ec5ff80;
+  --on-code: #1a1a1a;
+
+  /* border */
+  --border: oklch(38% 0.15 270);
+  --on-border: #ffffff;
+
+  /* tooltip */
+  --tooltip: oklch(62% 0.2 259);
+  --on-tooltip: oklch(95% 0 259);
+}
+
+html.dark {
+  /* background */
+  --bg: oklch(22% 0 270);
+  --on-bg: oklch(96% 0 270);
+  --on-bg-title: #e0ffff;
+
+  /* primary */
+  --primary: oklch(58% 0.2 247);
+  --on-primary: #f3f4f6;
+
+  /* secondary */
+  --secondary: oklch(58% 0.1 262);
+  --on-secondary: #f3f4f6;
+
+  /* states */
+  --destructive: #dc2626; /* #dc2626 = red-600 */
+  --success: #22c55e; /* #22c55e = green-600 */
+  --muted: oklch(25% 0 262);
+  --on-muted: oklch(50% 0 262);
+
+  /* surface */
+  --surface: oklch(25% 0 270);
+  --on-surface: #f3f4f6; /* #f3f4f6 = gray-100 */
+
+  /* sidebar */
+  --sidebar: oklch(40% 0.1 255);
+  --on-sidebar: oklch(98% 0.05 255);
+
+  /* border */
+  --border: oklch(70% 0 270);
+  --on-border: #ffffff;
+
+  /* code */
+  --code: oklch(40% 0 270);
+  --on-code: oklch(96% 0 270);
+
+  /* tooltip */
+  --tooltip: oklch(62% 0.2 259);
+  --on-tooltip: oklch(95% 0 259);
+}
+

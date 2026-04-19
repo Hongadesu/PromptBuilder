@@ -1,0 +1,172 @@
+.logo {
+  --caret: currentcolor;
+}
+
+.logo::before {
+  content: 'PromptBuilder';
+}
+
+.logo.active::before {
+  content: '';
+  animation: typing 13.5s infinite;
+}
+
+.logo.active::after {
+  content: '';
+  border-right: 1ch solid var(--caret);
+  animation: blink 0.5s linear infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes typing {
+  /* 一開始顯示 PromptBuilder */
+  0.000% {
+    content: 'PromptBuilder';
+  }
+
+  /* Phase 1: PromptBuilder -> "" */
+  2.000% {
+    content: 'PromptBuilde';
+  }
+  4.000% {
+    content: 'PromptBuild';
+  }
+  6.000% {
+    content: 'PromptBuil';
+  }
+  8.000% {
+    content: 'PromptBui';
+  }
+  10.000% {
+    content: 'PromptBu';
+  }
+  12.000% {
+    content: 'PromptB';
+  }
+  14.000% {
+    content: 'Prompt';
+  }
+  16.000% {
+    content: 'Promp';
+  }
+  18.000% {
+    content: 'Prom';
+  }
+  20.000% {
+    content: 'Pro';
+  }
+  22.000% {
+    content: 'Pr';
+  }
+  24.000% {
+    content: 'P';
+  }
+  26.000%,
+  28.000% {
+    content: '';
+  }
+
+  /* Phase 2: "" -> variable */
+  30.000% {
+    content: 'v';
+  }
+  32.000% {
+    content: 'va';
+  }
+  34.000% {
+    content: 'var';
+  }
+  36.000% {
+    content: 'vari';
+  }
+  38.000% {
+    content: 'varia';
+  }
+  40.000% {
+    content: 'variab';
+  }
+  42.000% {
+    content: 'variabl';
+  }
+  44.000% {
+    content: 'variable';
+  }
+
+  /* Phase 3: variable -> "" */
+  46.000% {
+    content: 'variabl';
+  }
+  48.000% {
+    content: 'variab';
+  }
+  50.000% {
+    content: 'varia';
+  }
+  52.000% {
+    content: 'vari';
+  }
+  54.000% {
+    content: 'var';
+  }
+  56.000% {
+    content: 'va';
+  }
+  58.000% {
+    content: 'v';
+  }
+  60.000%,
+  62.000% {
+    content: '';
+  }
+
+  /* Phase 4: "" -> PromptBuilder（輸入） */
+  64.000% {
+    content: 'P';
+  }
+  66.000% {
+    content: 'Pr';
+  }
+  68.000% {
+    content: 'Pro';
+  }
+  70.000% {
+    content: 'Prom';
+  }
+  72.000% {
+    content: 'Promp';
+  }
+  74.000% {
+    content: 'Prompt';
+  }
+  76.000% {
+    content: 'PromptB';
+  }
+  78.000% {
+    content: 'PromptBu';
+  }
+  80.000% {
+    content: 'PromptBui';
+  }
+  82.000% {
+    content: 'PromptBuil';
+  }
+  84.000% {
+    content: 'PromptBuild';
+  }
+  86.000% {
+    content: 'PromptBuilde';
+  }
+  88.000%,
+  100.000% {
+    content: 'PromptBuilder';
+  }
+}

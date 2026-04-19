@@ -1,0 +1,48 @@
+/* 整體 scrollbar */
+.scrollable::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* 軌道 background */
+.scrollable::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 0.375rem;
+}
+
+/* 可拖動的滾動條 thumb */
+.scrollable::-webkit-scrollbar-thumb {
+  background-color: var(--on-sidebar);
+  border-radius: 0.375rem;
+  /* 製造間距 */
+  background-clip: padding-box;
+  border: 2px solid transparent;
+}
+
+.scrollable::-webkit-scrollbar-thumb:hover {
+  background-color: var(--secondary);
+}
+
+/* Surface scrollbar */
+/* 整體 scrollbar */
+.surfaceScrollable::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* 軌道 background */
+.surfaceScrollable::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 0.375rem;
+}
+
+/* 可拖動的滾動條 thumb */
+.surfaceScrollable::-webkit-scrollbar-thumb {
+  background-color: var(--on-surface);
+  border-radius: 0.375rem;
+  /* 製造間距 */
+  background-clip: padding-box;
+  border: 2px solid transparent;
+}
+
+.surfaceScrollable::-webkit-scrollbar-thumb:hover {
+  background-color: var(--border);
+}
